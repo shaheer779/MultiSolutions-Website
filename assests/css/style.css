@@ -12,17 +12,17 @@
 	margin: 0;
 	line-height: 80px;
 }
-button:hover {
-	background-color: orange;
-}
 .slider-images {
 	width: 100%;
 	height: 800px;
 }
+.dropdown-menu {
+	z-index: 1 !important
+}
 
-/*styleing the slider*/
+/*====================================styling the slider==========================================*/
 .carousel-indicators li {
-	border: 4px solid orange;
+	border: 2px solid orange;
   }
 /* styling the caption text */
 .carousel-caption h3{
@@ -62,13 +62,15 @@ button:hover {
 	background: white;
 	margin-left: -50px;
 }
-.btn {
-	width: 150px;
-	height: 50px;
-	line-height: 35px;
-	margin-right: 10px;
-	margin-left: 10px;
+.nav-link {
+	padding-right: 80px !important;
+	margin-right: 80px !important;
 }
+.navbar-brand {
+	margin-right: 300px !important;
+}
+
+
 .carousel-caption .btn-full {
 	background: orange;
 }
