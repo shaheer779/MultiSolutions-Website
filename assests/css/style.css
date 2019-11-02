@@ -46,6 +46,8 @@
 	}
 	.collapse {
 		background-color: gray;
+		width: 100%;
+		transition: all 0.2s linear;
 		padding: 15px;
 	}
 }
