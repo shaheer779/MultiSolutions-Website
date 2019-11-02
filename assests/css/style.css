@@ -5,7 +5,21 @@
 .navbar {
 	background-color: rgba(0,0,0,0.8);
 	height: 80px;
-	padding-left: 0 !important;
+	padding-left: 0;
+}
+.nav-link {
+	margin-right: 200px;
+	color: orange !important;
+}
+.navbar-brand {
+	margin-right: 300px;
+}
+.navbar-toggler-icon {
+	font-size: 30px;
+	border-color: white;
+}
+.collapse {
+	z-index: 9999 !important;
 }
 .logo {
 	padding: 0;
@@ -13,11 +27,24 @@
 	line-height: 80px;
 }
 .slider-images {
-	width: 100%;
-	height: 800px;
+	max-width: 100%;
+	height: auto;
+	max-height: 700px;
 }
-.dropdown-menu {
-	z-index: 1 !important
+
+.dropdown-item {
+	color: orange;
+}
+
+/*responsiveness*/
+@media screen and (max-width: 1000px){
+	.navbar {
+		height: 100px;
+	}
+	.collapse {
+		background-color: rgba(0,0,0,0.7);
+		padding: 10px;
+	}
 }
 
 /*====================================styling the slider==========================================*/
@@ -25,14 +52,13 @@
 	border: 2px solid orange;
   }
 /* styling the caption text */
-.carousel-caption h3{
+.carousel-caption h5{
 	  font-size: 40px;
 	  font-weight: bold;
-	  color: white;
+	  color: orange;
   }
 .carousel-caption {
-  	margin-bottom: 12%;
-  	color: white;
+  	margin-bottom: 13%;
   	transition: all 1s ease;
   }
 .carousel-caption span {
@@ -40,40 +66,14 @@
   }
 .carousel-caption p {
   	font-size: 20px;
+  	color: darkorange;
+  	font-weight: bolder;
   }
 .carousel-caption i {
 	font-size: 60px;
 	margin-right: 50px;
 }
 
-/*coloring the icons*/
-.fa-apple {
-	color: white;
-}
-.fa-windows {
-	color: darkblue;
-}
-.fa-android {
-	color: green;
-}
-
-/*caption button styling*/
-.carousel-caption .btn-half {
-	background: white;
-	margin-left: -50px;
-}
-.nav-link {
-	padding-right: 80px !important;
-	margin-right: 80px !important;
-}
-.navbar-brand {
-	margin-right: 300px !important;
-}
-
-
-.carousel-caption .btn-full {
-	background: orange;
-}
 .carousel-caption .btn:hover {
 	opacity: 0.7;
 }
@@ -81,5 +81,5 @@
 	font-size: 20px;
 }
 .carousel-control-next-icon,.carousel-control-prev-icon  {
-	padding:20px;
+	padding: 12px;
 }
