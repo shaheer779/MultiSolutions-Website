@@ -150,6 +150,9 @@
 	background-color: darkorange;
 	border: 20px solid orange;
 	color: black;
+} 
+.intro-row {
+	margin-bottom: 80px;
 }
 
 /*====================================styling the slider==========================================*/
