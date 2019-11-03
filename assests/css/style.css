@@ -1,3 +1,8 @@
+
+
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -153,6 +158,8 @@
 }
 
 /*====================================styling the slider==========================================*/
+
+
 .carousel-indicators li {
 	border: 2px solid orange;
   }
@@ -187,4 +194,67 @@
 }
 .carousel-control-next-icon,.carousel-control-prev-icon  {
 	padding: 12px;
+}
+
+.carouselExampleCaptions.carousel-indicators{
+	position: absolute;
+}
+/* Styling the cards ===========================================================================*/
+
+.team-area{
+	padding:60px 0px;
+}
+
+.card{
+	border: none;
+}
+.img-area{
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.team-single:hover .side-two{
+
+	transform: rotateY(0deg);
+	border-radius: 5px;
+
+}
+.team-single:hover .side-one{
+
+	transform: rotateY(180deg);
+
+}
+.content-area{
+	transform:perspective(1000px);
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+
+}
+.side-one{
+	position: relative;
+    transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+.side-two{
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: rotateY(-180deg)
+}
+.side-one,
+.side-two{
+ backface-visibility: hidden;
+ transition: 1s;
+ transform-style: preserve-3d;
+
+}
+.side-one.card,
+.side-two.card{
+	height: 312px;
+
 }
