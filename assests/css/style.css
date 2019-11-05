@@ -59,7 +59,7 @@
 }
 .sub-heading {
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
@@ -111,7 +111,7 @@
 .intro-block {
 	position: relative;
 	background-color: rgba(0,0,0,0.8);
-	margin-top: 50px;
+	margin-top: 80px;
 	padding: 70px 25px 40px;
 	transition: all 0.5s ease-in-out;
 	width: 100%;
@@ -198,6 +198,92 @@
 
 .carouselExampleCaptions.carousel-indicators{
 	position: absolute;
+}
+/**********************
+/***** Services *******
+/*********************/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section{
+	padding: 0;
+}
+section .section-title{
+	text-align:center;
+	color: orange;
+	margin-bottom:50px;
+	text-transform:uppercase;
+}
+#what-we-do{
+	margin-top: 0;
+	background: #ffffff;
+}
+#what-we-do .card{
+	padding: 1rem!important;
+	border: none;
+	background-color: rgba(0,0,0,0.8);
+	margin-bottom:1rem;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#what-we-do .card:hover{
+	-webkit-box-shadow: 8px 10px 10px -4px darkorange;
+	-moz-box-shadow: 8px 10px 10px -4px darkorange;
+	box-shadow: 8px 10px 10px -4px darkorange;
+}
+#what-we-do .card .card-block{
+	padding-left: 50px;
+    position: relative;
+}
+#what-we-do .card .card-block a{
+	color: orange !important;
+	font-weight:700;
+	text-decoration:none;
+}
+#what-we-do .card .card-block a i{
+	display:none;
+	
+}
+#what-we-do .card:hover .card-block a i{
+	display:inline-block;
+	font-weight:700;
+	
+}
+#what-we-do .card .card-block h3, #what-we-do .card .card-block p {
+	color: orange;
+}
+#what-we-do .card .card-block:before{
+	font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: orange;
+    left: 0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+}
+#what-we-do .card .block-1:before{
+    content: "\f0e7";
+}
+#what-we-do .card .block-2:before{
+    content: "\f0eb";
+}
+#what-we-do .card .block-3:before{
+    content: "\f00c";
+}
+#what-we-do .card .block-4:before{
+    content: "\f209";
+}
+#what-we-do .card .block-5:before{
+    content: "\f0a1";
+}
+#what-we-do .card .block-6:before{
+    content: "\f218";
+}
+#what-we-do .card:hover .card-block:before{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);	
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
 }
 /* Styling the cards ===========================================================================*/
 
