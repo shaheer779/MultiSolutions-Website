@@ -13,16 +13,13 @@
 	justify-content: space-around;
 }
 .nav-link {
-	color: orange !important;
+	color: #f0ad4e!important;
 }
 .navbar-brand {
 }
 .navbar-toggler-icon {
 	font-size: 30px;
 	border-color: white;
-}
-.collapse {
-	z-index: 9999 !important;
 }
 .logo {
 	padding: 0;
@@ -36,8 +33,17 @@
 }
 
 .dropdown-item {
-	color: orange;
+	color: #f0ad4e;
 }
+/*===================Collapse section styling================*/
+.collapse {
+	z-index: 9999 !important;
+	color: #f0ad4e;
+}
+.card {
+	background-color: #f0ad4e !important;
+}
+
 
 /*responsiveness*/
 @media screen and (max-width: 1000px){
@@ -73,7 +79,7 @@
 	width: 6%;
 	height: 2px;
 	z-index: 1;
-	background-color: orange;
+	background-color: #f0ad4e;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-ms-transition: all 1s ease;
@@ -118,17 +124,17 @@
 	height: auto;
 }
 .intro-block p {
-	color:  orange;
+	color:  #f0ad4e;
 	transition: all 0.5s ease-in-out;
 }
 .intro-block h3 {
 	margin-top: 50px;
-	color:  orange;
+	color:  #f0ad4e;
 	font-weight: bolder;
 	transition: all 0.5s ease-in-out;
 }
 .intro-block:hover {
-	background-color: orange;
+	background-color: #f0ad4e;
 }
 .intro-block:hover p {
 	color: black;
@@ -145,12 +151,12 @@
 	padding: 2.5% 5% 2.5% 5%;
 	border: 20px solid gray;
 	border-radius: 50%;
-	color: orange;
+	color: #f0ad4e;
 	transition: all 0.5s ease-in-out;
 }
 .intro-block:hover .intro-icon {
 	background-color: darkorange;
-	border: 20px solid orange;
+	border: 20px solid #FFCC00;
 	color: black;
 } 
 .intro-row {
@@ -161,24 +167,24 @@
 
 
 .carousel-indicators li {
-	border: 2px solid orange;
+	border: 2px solid #f0ad4e;
   }
 /* styling the caption text */
 .carousel-caption h5{
 	  font-size: 40px;
 	  font-weight: bold;
-	  color: orange;
+	  color: #f0ad4e;
   }
 .carousel-caption {
   	margin-bottom: 13%;
   	transition: all 1s ease;
   }
 .carousel-caption span {
-  	color: orange;
+  	color: #f0ad4e;
   }
 .carousel-caption p {
   	font-size: 20px;
-  	color: darkorange;
+  	color: #f0ad4e;
   	font-weight: bolder;
   }
 .carousel-caption i {
@@ -208,7 +214,7 @@ section{
 }
 section .section-title{
 	text-align:center;
-	color: orange;
+	color: #f0ad4e;
 	margin-bottom:50px;
 	text-transform:uppercase;
 }
@@ -219,23 +225,30 @@ section .section-title{
 #what-we-do .card{
 	padding: 1rem!important;
 	border: none;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.8) !important;
 	margin-bottom:1rem;
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
 }
 #what-we-do .card:hover{
-	-webkit-box-shadow: 8px 10px 10px -4px darkorange;
-	-moz-box-shadow: 8px 10px 10px -4px darkorange;
-	box-shadow: 8px 10px 10px -4px darkorange;
+	background-color: #f0ad4e !important;
+	-webkit-box-shadow: 8px 10px 10px -4px #f0ad4e;
+	-moz-box-shadow: 8px 10px 10px -4px #f0ad4e;
+	box-shadow: 8px 10px 10px -4px #f0ad4e;
+}
+#what-we-do .card:hover .card-title {
+	color: rgba(0,0,0,0.8) !important;
+}
+#what-we-do .card:hover .card-text {
+	color: rgba(0,0,0,0.8) !important;
 }
 #what-we-do .card .card-block{
 	padding-left: 50px;
     position: relative;
 }
 #what-we-do .card .card-block a{
-	color: orange !important;
+	color: #f0ad4e !important;
 	font-weight:700;
 	text-decoration:none;
 }
@@ -245,20 +258,25 @@ section .section-title{
 }
 #what-we-do .card:hover .card-block a i{
 	display:inline-block;
-	font-weight:700;
-	
+	font-weight:700;	
+}
+#what-we-do .card:hover .card-block a {
+	color: rgba(0,0,0,0.8) !important;
 }
 #what-we-do .card .card-block h3, #what-we-do .card .card-block p {
-	color: orange;
+	color: #f0ad4e;
 }
 #what-we-do .card .card-block:before{
 	font-family: FontAwesome;
     position: absolute;
     font-size: 39px;
-    color: orange;
+    color: #f0ad4e;
     left: 0;
 	-webkit-transition: -webkit-transform .2s ease-in-out;
     transition:transform .2s ease-in-out;
+}
+#what-we-do .card:hover .card-block:before{
+	color: rgb(0,0,0,0.8) !important;
 }
 #what-we-do .card .block-1:before{
     content: "\f0e7";
@@ -349,7 +367,7 @@ section .section-title{
     -webkit-perspective: 1000;
     perspective: 1000;
     border: 0;
-    background: transparent;
+    background: transparent !important;
 }
 
 .flip-card:hover .flip-card-inner,
@@ -415,7 +433,7 @@ section .section-title{
 .flip-card-inner-front span {
     width: 100%;
     text-align: center;
-    background: rgba(255, 165, 0,0.8);
+    background: rgba(240,173,78,0.8);
     padding: 0.25rem 0;
     font-size: 1.25rem;
     font-weight: bold;
@@ -437,7 +455,7 @@ section .section-title{
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
-    background: orange;
+    background-color: #f0ad4e;
     padding: 1rem;
 }
 
@@ -449,3 +467,11 @@ section .section-title{
     line-height: 1.3;
 }
 
+
+/*===========================page footer=============================*/
+.page-footer {
+	background-color: rgb(0,0,0,0.8);
+}
+.footerIcons:hover {
+	opacity: 0.5;
+}
