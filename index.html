@@ -23,15 +23,15 @@
   <link rel="stylesheet" type="text/css" href="assests/css/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
 
   <!-- bootstrap js cdn file-->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!-- bootstrap js downloded file -->
   <script src="assests/css/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
   <!-- ================================================================================================== -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
  
 </head>
 <body>
@@ -561,9 +561,12 @@
   <section>
   <div class="container-fluid">
     <h1 class="text-center text-capitalize text-dark pt-5"> Gallery</h1>
-    <hr class="w-25 pb-5 mx-auto"></hr></div></section>
-    <section>
-      <div class="container-fluid">
+    
+    <div class="sub-heading pt-3">
+      
+    </div></div>
+    
+      <div class="container-fluid" style="padding-top: 100px;">
 <div class="row mb-3" >
     <div class="col-lg-4 col-md-4 col-12 " mb-3>
       <img src="assests/images/new1.jpg" class="img-fluid"></div>
@@ -644,7 +647,41 @@
 <!-- Footer -->
 
 </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- scroll animation code -->
+<script>
+window.sr = ScrollReveal();
+sr.reveal('.navbar',{
+  duration:3000,
+  origin:'top' 
+});
+sr.reveal('.container',{
+  duration:2000,
+  origin:'bottom' 
+});
+sr.reveal('.intro-row',{
+  duration:2000,
+  origin:'bottom' 
+});
+sr.reveal('.accordion',{
+  duration:2000,
+  origin:'bottom' 
+});
+sr.reveal('.container-fluid',{
+  duration:2000,
+  origin:'bottom' 
+});
+sr.reveal('.d-flex',{
+  duration:2000,
+  origin:'bottom' 
+});
+
+
+
+</script>
 <!-- custom javascript file -->
 
 <script src="assests/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
