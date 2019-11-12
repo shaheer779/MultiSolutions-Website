@@ -37,4 +37,31 @@ $(document).ready( ()=>{
 					}
 				});
 			}
+			window.sr = ScrollReveal();
+sr.reveal('.navbar',{
+  duration:3000,
+  origin:'top' 
+});
+sr.reveal('.container',{
+  duration:2000,
+  origin:'bottom' 
+});
+sr.reveal('.intro-row',{
+  duration:2000,
+  origin:'bottom' 
+});
+sr.reveal('.accordion',{
+  duration:2000,
+  origin:'bottom' 
+});
+sr.reveal('.container-fluid',{
+  duration:2000,
+  origin:'bottom' 
+});
+sr.reveal('.d-flex',{
+  duration:2000,
+  origin:'bottom' 
+});
+
+
 		})
