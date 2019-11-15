@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+.parallax{
+	background-image:url('assests/images/pic1.jpg');
+height:100%;
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+#mainContainer {
+	margin: 0;
+	padding: 0;
+	max-width: 100% !important;
+}
+.navbar {
+	background-color: rgba(0,0,0,0.8);
+	height: 80px;
+	padding-left: 0;
+}
+.navbar-nav {
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+}
+.nav-link {
+	color: #f0ad4e!important;
+}
+.navlinks {
+	
+}
+.navlinks:hover {
+	background-color: #f0ad4e;
+}
+.navlinks:hover .nav-link {
+	color: black !important;
+}
+
+.navbar-toggler-icon {
+	font-size: 30px;
+	border-color: white;
+}
+.logo {
+	padding: 0;
+	margin: 0;
+	line-height: 80px;
+}
+.slider-images {
+	max-width: 100%;
+	height: auto;
+	max-height: 700px;
+}
+/* styling the caption text */
+.carousel-caption h5{
+	  font-size: 40px;
+	  font-weight: bold;
+	  color: #f0ad4e;
+  }
+.carousel-caption {
+  	margin-bottom: 13%;
+  	transition: all 1s ease;
+  }
+.carousel-caption span {
+  	color: #f0ad4e;
+  }
+.carousel-caption p {
+  	font-size: 20px;
+  	color: #f0ad4e;
+  	font-weight: bolder;
+  }
+.carousel-caption i {
+	font-size: 60px;
+	margin-right: 50px;
+}
+
+.carousel-caption .btn:hover {
+	opacity: 0.7;
+}
+.dropdown-item {
+	color: #f0ad4e;
+}
+/*===================Collapse section styling================*/
+.collapse {
+	z-index: 9999 !important;
+	color: #f0ad4e;
+}
+
+
+
+/*responsiveness*/
+@media screen and (max-width: 1000px){
+	.navbar {
+		height: 100px;
+	}
+	.collapse {
+		background-color: gray;
+		width: 100%;
+		transition: all 0.2s linear;
+		padding: 15px;
+	}
+}
+
+/*=======intro Area styling ============*/
+.intro-area {
+	position: relative;
+	padding: 50px 0px;
+}
+.sub-heading {
+	position: relative;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/*creating a responsive line*/
+.sub-heading:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -3%;
+	width: 6%;
+	height: 2px;
+	z-index: 1;
+	background-color: #f0ad4e;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+/*Adding the hover effect to the line*/
+.sub-heading:hover:before {
+	width: 24%;
+	margin-left: -12%;
+}
+
+.sub-heading:after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -12%;
+	width: 24%;
+	height: 2px;
+	background-color: #e1e1e1;
+}
+/*styling the paragraph inside sub heading*/
+.sub-heading p {
+	color: #818181;
+	padding: 0px 0px 20px;
+	display: inline-block;
+	line-height: 24px;
+	letter-spacing: 0.025em;
+}
+
+
+
+.img-area{
+	width: 100%;
+	height: 300px;
+	display: inline-block;
+	overflow: hidden;
+	background-color: white !important;
+}
+.inner{
+	overflow: hidden;
+}
+.inner img{
+	transition: all 1.5s ease;
+}
+.inner:hover img{
+	transform: scale(1.5);
+}
+
+.card{
+	margin-bottom: 10px;
+}
+/*=============================== Styling the footer =============================*/
+.page-footer {
+	background-color: rgb(0,0,0,0.8);
+}
+.footerIcons:hover {
+		cursor: pointer;
+		opacity: 0.5;
+}
