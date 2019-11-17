@@ -8,7 +8,7 @@ body {
 }
 .parallax{
 	background-image:url('assests/images/pic1.jpg');
-height:100%;
+	height:100%;
 	background-attachment:fixed;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -189,4 +189,20 @@ height:100%;
 .footerIcons:hover {
 		cursor: pointer;
 		opacity: 0.5;
+}
+.line-break {
+	border-color : orange;
+	background-color: orange;
+	height: 1px;
+}
+.heading-content {
+	width: 98%;
+	margin: 50px auto;
+}
+.side-one {
+	height: 300px;
+}
+.services-images {
+	width: 100%;
+	height: 300px;
 }

@@ -11,6 +11,7 @@
 	min-height: 500px;
 	padding-top: 20px;
 }
+
 .product-section-container h5 {
 	margin-top: 60px;
 	margin-left: 50px;
@@ -29,7 +30,8 @@
 	height: 400px;
 }
 .product-card {
-	margin-left: 50px;
+	width: 30%;
+	margin-left: 2%;
 	margin-bottom: 20px;
 	height: 300px;
 	background-color: #f7f7f7!important;
@@ -51,3 +53,4 @@
 	background-color: orange;
 	height: 1px;
 }
+
