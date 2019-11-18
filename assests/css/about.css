@@ -1,0 +1,95 @@
+body {
+  background-color: #f7f7f7;
+}
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+.line-break {
+  border-color : orange;
+  background-color: orange;
+  height: 1px;
+}
+
+/*================goal container styling=============*/
+.goals-container, .leadership-info-container, .team-container {
+  min-height: 400px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+}
+/*================ mission container styling ================*/
+.mission-container, .about-info, .leadership {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-info-paragraph {
+  text-align: justify;
+}
+
+/*============== leader information section styling ========================*/
+.leadership-info-container {
+}
+.leader {
+  width: 100%;
+  margin-bottom: 5px;
+  max-height: 300px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #f1f1f1;
+}
+.leader-image-container {
+  min-width: 200px;
+  width: 30%;
+}
+.leader-image {
+  width: 100%;
+  height: 100%;
+}
+.leadership-info {
+}
+.leader-info-para {
+  padding: 20px;
+  max-width: 70%;
+  height: auto;
+}
+
+/*================================== team section styling ===================================*/
+.rows-container {
+  width: 100%;
+  height: 900px;
+  max-height:1000px; 
+}
+.team-info {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.team-member {
+  height: 25%;
+}
+.team-images {
+  border-radius: 50%;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+}
