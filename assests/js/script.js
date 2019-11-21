@@ -65,3 +65,12 @@ sr.reveal('.d-flex',{
 
 
 });
+
+// responsive nav bar 
+var nav = document.querySelectorAll(".navbar");
+var introArea = document.querySelectorAll(".introarea-container");
+
+if($(window).width() < 1000) {
+	$(nav).removeClass('fixed-top');
+	$(introArea).css("display", "none");
+}

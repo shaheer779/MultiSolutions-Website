@@ -1,5 +1,43 @@
 body {
   background-color: #f7f7f7;
+  font-family: 'BioRhyme','Georgia', serif !important;
+}
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#mainContainer {
+  margin: 0;
+  padding: 0;
+  max-width: 100% !important;
+}
+.navbar {
+  background-color: rgba(0,0,0,0.8);
+  max-height: 80px;
+  padding-left: 0;
+}
+.navbar-nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-link {
+  color: #f0ad4e!important;
+}
+.navlinks {
+  
+}
+.navlinks:hover {
+  background-color: #f0ad4e;
+}
+.navlinks:hover .nav-link {
+  color: black !important;
+}
+
+.navbar-toggler-icon {
+  font-size: 10px !important;
+  border-color: white;
 }
 .social-link {
   width: 30px;

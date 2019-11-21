@@ -2,18 +2,21 @@
 <html>
 <head>
   <title>MultiSolution</title>
-
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- jQuery file -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
   <!-- Font Awesome Downloded file -->
   <link rel="stylesheet" type="text/css" href="assests/css/lib/css/all.min.css">
+
   <!-- Font Awesome file CDN-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-<!-- animate.css file -->
+  <!-- animate.css file -->
   <link rel="stylesheet" type="text/css" href="assests/css/animate.css">
 
+  <!-- custom css file -->
+  <link rel="stylesheet" type="text/css" href="assests/css/style.css">
 
   <!-- bootstrap cdn css file -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,10 +34,6 @@
   <!-- ================================================================================================== -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-   <!-- custom css file -->
-  <link rel="stylesheet" type="text/css" href="assests/css/style.css">
-
-
  
 </head>
 <body>
@@ -42,22 +41,22 @@
 <div id="mainContainer"> 
   <!-- navigation bar -->
   <!-- ================================================================================ -->
- <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span ><a><img src="assests/images/menu1.png" height="40px" width="40px"></a></span>
+    <span ><a><img src="assests/images/menu1.png" height="30px" width="30px"></a></span>
   </button>
-  <a class="navbar-brand" href="#"><img src="assests/logo/logoedit3.png" height="80px" width="250px" alt=""/></a>
+  <a class="navbar-brand" href="#"><img id="logo-img"src="assests/logo/logoedit3.png" alt=""/></a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active navlinks">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-dark" href="index.html" style="background-color:#f0ad4e;">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item navlinks">
-        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="products.html" >Products <span class="sr-only">(current)</span></a>
       </li>
-       <li class="nav-item active navlinks">
-        <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
+       <li class="nav-item active navlinks ">
+        <a class="nav-link"  href="services.html">Services <span class="sr-only">(current)</span></a>
       </li>
        <li class="nav-item active navlinks">
         <a class="nav-link" href="aboutus.html">About us <span class="sr-only">(current)</span></a>
@@ -116,6 +115,7 @@
 </div>
 <!-- =================================== Intro Area ====================================================== -->
 <!-- intro main container -->
+<div class="introarea-container"> 
 <div class="intro-area white" id="intro">
   <!-- Container for rows -->
   <div class="container">
@@ -179,55 +179,8 @@
       </div>
     </div>
 </div>
+</div>
 
-<!-- ========================================= Collapseables ================================================= -->
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h2 class="mb-0 ">
-          <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Collapsible Group Item #1
-          </button>
-        </h2>
-      </div>
-
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body bg-dark">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="card ">
-      <div class="card-header" id="headingTwo">
-        <h2 class="mb-0">
-          <button class=" text-dark btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Collapsible Group Item #2
-          </button>
-        </h2>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body bg-dark ">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Collapsible Group Item #3
-          </button>
-        </h2>
-      </div>
-      <div id="collapseThree" class="collapse bg-dark " aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ==================================================================================== -->
 
 <!--===================================== creating the product card section================================================== -->
 <div class="intro-area white" id="intro">
@@ -249,8 +202,8 @@
     </div>
   </div>
 </div>
-<div class="d-flex">
-  <div class="flip-card card mr-2" ontouchstart="this.classList.toggle('hover');">
+<div class="row">
+  <div class="flip-card card col-md-3" ontouchstart="this.classList.toggle('hover');">
     <div class="flip-card-inner">
       <div class="flip-card-inner-front flipOne">
         <span>CCTV Cameras</span>
@@ -262,7 +215,7 @@
       </div>
     </div>
   </div>
-  <div class="flip-card card mr-2" ontouchstart="this.classList.toggle('hover');">
+  <div class="flip-card card col-md-3"ontouchstart="this.classList.toggle('hover');">
     <div class="flip-card-inner">
       <div class="flip-card-inner-front flipTwo">
         <span>Solar Panels</span>
@@ -274,7 +227,7 @@
       </div>
     </div>
   </div>
-  <div class="flip-card card mr-2" ontouchstart="this.classList.toggle('hover');">
+  <div class="flip-card card col-md-3" ontouchstart="this.classList.toggle('hover');">
     <div class="flip-card-inner">
       <div class="flip-card-inner-front flipThree">
         <span>Fire Alarms</span>
@@ -286,7 +239,7 @@
       </div>
     </div>
   </div>
-  <div class="flip-card card mr-2" ontouchstart="this.classList.toggle('hover');">
+  <div class="flip-card card col-md-3" ontouchstart="this.classList.toggle('hover');">
     <div class="flip-card-inner">
       <div class="flip-card-inner-front flipFour">
         <span>Electric Bulbs</span>

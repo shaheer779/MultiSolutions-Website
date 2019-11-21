@@ -2,7 +2,9 @@
 <html>
 <head>
   <title>MultiSolution</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=BioRhyme&display=swap" rel="stylesheet">
   <!-- jQuery file -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
@@ -11,9 +13,11 @@
   <!-- Font Awesome file CDN-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-<!-- animate.css file -->
+  <!-- animate.css file -->
   <link rel="stylesheet" type="text/css" href="assests/css/animate.css">
 
+  <!-- products css file -->
+  <link rel="stylesheet" type="text/css" href="assests/css/products.css">
   <!-- bootstrap cdn css file -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -31,10 +35,6 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-   <!-- custom css file -->
-  <link rel="stylesheet" type="text/css" href="assests/css/style.css">
-  <!-- products css file -->
-  <link rel="stylesheet" type="text/css" href="assests/css/products.css">
 
 
  
@@ -46,9 +46,9 @@
   <!-- ================================================================================ -->
  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span ><a><img src="assests/images/menu1.png" height="40px" width="40px"></a></span>
+    <span ><a><img src="assests/images/menu1.png" height="30px" width="30px"></a></span>
   </button>
-  <a class="navbar-brand" href="#"><img src="assests/logo/logoedit3.png" height="80px" width="250px" alt=""/></a>
+  <a class="navbar-brand" href="#"><img id="logo-img"src="assests/logo/logoedit3.png" alt=""/></a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -56,10 +56,10 @@
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item navlinks">
-        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link text-dark" href="products.html"style="background-color:#f0ad4e;" >Products <span class="sr-only">(current)</span></a>
       </li>
-       <li class="nav-item active navlinks">
-        <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
+       <li class="nav-item active navlinks ">
+        <a class="nav-link"  href="services.html">Services <span class="sr-only">(current)</span></a>
       </li>
        <li class="nav-item active navlinks">
         <a class="nav-link" href="aboutus.html">About us <span class="sr-only">(current)</span></a>
@@ -82,86 +82,96 @@
   <div class="product-section-container">
     <h2>All products </h2>
     <hr class="line-break">
-    <h5>We offer a variety of Products at best prices with 100% quality. Your satisfaction is our reward. </h5>
+    <h5> <em>Multisolutions offer the broad variety of the products according to it's customer needs. From top quality security cameras (CCTV) to best
+    solar panels for clean energy, we offer best products for any region, environment and application. </em>  </h5>
     <div class="product-container row">
-      <div class="card product-card">
+      <div class="card product-card col-md-4">
         <a href="assests/product-pages/cctv.html">  <img class="card-img-top" src="https://flinnelectric.com/online/wp-content/uploads/Construction-site-security-copy.jpg" alt="Card image cap">
         </a>
         <div class="card-body product-card-body">
-          <p class="card-text" style = "margin-top: 10px">CCTV Cameras. Best for survillance</p>
+          <p class="card-text" style = "margin-top: 10px; font-weight: bold; font-size: 25px">CCTV Cameras</p>
           <hr>
+          <p>"CCTV (closed-circuit television) is a TV system in which signals are not publicly distributed but are monitored, primarily for surveillance and security purposes. CCTV relies on strategic placement of cameras, and observation of the camera's input on monitors somewhere."</p>
           <a href="product table.html">Details </a>
         </div>
       </div>
-      <div class="card product-card">
+      <div class="card product-card col-md-4">
         <a href="assests/product-pages/solar-panel.html"> <img class="card-img-top" src="https://greenwave.co.za/wp-content/uploads/2019/05/33662566_s-555x416.jpg" alt="Card image cap">
         </a>
         <div class="card-body product-card-body">
-          <p class="card-text" style = "margin-top: 10px">CCTV Cameras. Best for survillance</p>
+          <p class="card-text" style = "margin-top: 10px">Solar Panels</p>
           <hr>
+          <p >Solar panels are those devices which are used to absorb the sun's rays and convert them into electricity or heat. ... These cells are arranged in a grid-like pattern on the surface of solar panels. Thus, it may also be described as a set of photovoltaic modules, mounted on a structure supporting it. </p>
           <a href="assests/product-pages/solar-panel.html">Details </a>
         </div>
       </div>
-      <div class="card product-card">
+      <div class="card product-card col-md-4">
        <a href="assests/product-pages/fire-alarm.html">   <img class="card-img-top" src="http://www.newbharatfire.com/website/images/products/fire-alarm-system.jpeg" alt="Card image cap">
        </a>
         <div class="card-body product-card-body">
-          <p class="card-text" style = "margin-top: 10px">CCTV Cameras. Best for survillance</p>
+          <p class="card-text" style = "margin-top: 10px">Fire Alarm</p>
           <hr>
+          <p>A fire alarm is an electronic sounder or a bell. The alarm makes a loud, high pitched sound to notify people that there is a fire in the building. The sounders can be programmed to sound different tones. Most fire alarm sounders in Europe sound like a siren.</p>
           <a href="assests/product-pages/fire-alarm.html">Details </a>
         </div>
       </div>
-      <div class="card product-card">
+      <div class="card product-card col-md-4">
          <a href="assests/product-pages/ac.html"> <img class="card-img-top" src="https://cdn.hipwallpaper.com/i/58/29/Psdb53.jpg" alt="Card image cap">
          </a>
         <div class="card-body product-card-body">
-          <p class="card-text" style = "margin-top: 10px">CCTV Cameras. Best for survillance</p>
+          <p class="card-text" style = "margin-top: 10px">Air Conditioner (AC)</p>
           <hr>
+          <p>An air conditioner is a system or a machine that treats air in a defined, usually enclosed area via a refrigeration cycle in which warm air is removed and replaced with cooler air,Air conditioning engineers broadly divide air conditioning applications into comfort and process.</p>
           <a href="assests/product-pages/ac.html">Details </a>
         </div>
       </div>
-      <div class="card product-card">
+      <div class="card product-card col-md-4">
          <a href="product table.html"> <img class="card-img-top" src="https://lorextechnology.com/images/products/MPX1684ZUW/1200x800/mpx-security-camera-system-MPX1684ZUW-L1.png" alt="Card image cap">
          </a>
         <div class="card-body product-card-body">
           <p class="card-text" style = "margin-top: 10px">CCTV Cameras. Best for survillance</p>
           <hr>
+          <p>CCTV (closed-circuit television) is a TV system in which signals are not publicly distributed but are monitored, primarily for surveillance and security purposes. CCTV relies on strategic placement of cameras, and observation of the camera's input on monitors somewhere.</p>
           <a href="product table.html">Details </a>
         </div>
       </div>
-      <div class="card product-card">
+      <div class="card product-card col-md-4">
          <a href="product table.html"> <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/61FOq5pcNSL._SX466_.jpg" alt="Card image cap">
          </a>
         <div class="card-body product-card-body">
           <p class="card-text" style = "margin-top: 10px">CCTV Cameras. Best for survillance</p>
           <hr>
+          <p>CCTV (closed-circuit television) is a TV system in which signals are not publicly distributed but are monitored, primarily for surveillance and security purposes. CCTV relies on strategic placement of cameras, and observation of the camera's input on monitors somewhere.</p>
           <a href="product table.html">Details </a>
         </div>
       </div>
-      <div class="card product-card">
+      <div class="card product-card col-md-4">
         <a href="product table.html">  <img class="card-img-top" src="assests/images/pic3.jpg" alt="Card image cap">
         </a>
         <div class="card-body product-card-body">
           <p class="card-text" style = "margin-top: 10px">CCTV Cameras. Best for survillance</p>
           <hr>
+          <p>CCTV (closed-circuit television) is a TV system in which signals are not publicly distributed but are monitored, primarily for surveillance and security purposes. CCTV relies on strategic placement of cameras, and observation of the camera's input on monitors somewhere.</p>
           <a href="product table.html">Details </a>
         </div>
       </div>
-      <div class="card product-card">
+      <div class="card product-card col-md-4">
          <a href="product table.html"> <img class="card-img-top" src="assests/images/pic3.jpg" alt="Card image cap">
          </a>
         <div class="card-body product-card-body">
           <p class="card-text" style = "margin-top: 10px">CCTV Cameras. Best for survillance</p>
           <hr>
+          <p>CCTV (closed-circuit television) is a TV system in which signals are not publicly distributed but are monitored, primarily for surveillance and security purposes. CCTV relies on strategic placement of cameras, and observation of the camera's input on monitors somewhere.</p>
           <a href="product table.html">Details </a>
         </div>
       </div>
-      <div class="card product-card">
+      <div class="card product-card col-md-4">
          <a href="product table.html"> <img class="card-img-top" src="assests/images/pic3.jpg" alt="Card image cap">
          </a>
         <div class="card-body product-card-body">
           <p class="card-text" style = "margin-top: 10px">CCTV Cameras. Best for survillance</p>
           <hr>
+          <p>CCTV (closed-circuit television) is a TV system in which signals are not publicly distributed but are monitored, primarily for surveillance and security purposes. CCTV relies on strategic placement of cameras, and observation of the camera's input on monitors somewhere.</p>
           <a href="product table.html">Details </a>
         </div>
       </div>
