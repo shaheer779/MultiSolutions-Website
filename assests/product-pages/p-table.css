@@ -61,11 +61,6 @@ body {
 		top: 25%;
 		left: 10%;
 	}
-	.service-table-container {
-		background: url(https://studiousmedia.sg/wp-content/uploads/2015/03/services-banner-background.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
 }
 @media only screen and (min-width: 1200px){
 	.products-table {
@@ -74,11 +69,6 @@ body {
 		left: 10%;
 		width: 80% !important;
 		color: white !important;
-	}
-	.service-table-container {
-		background: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1307&q=80);
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 }
 .products-title {
