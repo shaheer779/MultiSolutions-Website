@@ -98,6 +98,7 @@ body {
 	margin-bottom: 40px;
 	min-height: 300px;
 	background-color: white!important;
+	
 }
 .product-card:hover {
 	box-shadow: 2px 2px 2px 1px gray;
@@ -106,7 +107,7 @@ body {
 	padding: 10px !important;
 }
 .card-img-top {
-	height: 150px;
+	height: 230px;
 }
 .carousel-container {
 
