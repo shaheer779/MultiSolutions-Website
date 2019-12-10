@@ -69,8 +69,12 @@ sr.reveal('.d-flex',{
 // responsive nav bar 
 var nav = document.querySelectorAll(".navbar");
 var introArea = document.querySelectorAll(".introarea-container");
+// var table = document.querySelectorAll(".products-table");
+var socialLinksNav = document.querySelectorAll(".social-links");
 
 if($(window).width() < 1000) {
 	$(nav).removeClass('fixed-top');
+	$(nav).css("background-color", "rgba(0,0,0,0.8)");
 	$(introArea).css("display", "none");
+	$(socialLinksNav).css("display", "none");
 }
