@@ -5,7 +5,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'BioRhyme','Georgia', serif;
+	font-family: 'BioRhyme','Georgia', serif !important;
 }
 #mainContainer {
 	margin: 0;
@@ -47,6 +47,9 @@ body {
 .social-links-icons {
 	font-size: 15px !important;
 	margin-right: 5px;
+}
+.nav-social-links:hover {
+	opacity: 0.6;
 }
 .navlinks:hover {
 	background-color: #f0ad4e;
@@ -101,8 +104,8 @@ body {
 .pdf-link-button {
 	position: absolute;
 	top: 85%;
-	left: 10%;
-	width: 80%;
+	left: 25%;
+	width: 50%;
 	
 }
 .pdf-link-button button {

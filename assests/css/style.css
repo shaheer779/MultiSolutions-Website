@@ -28,6 +28,25 @@ body {
 .navlinks {
 	
 }
+.social-links {
+	min-width: 8%;
+	padding: 5px;
+	padding-top:10px;
+}
+.social-links ul li{
+	list-style: none;
+}
+.social-links ul li a {
+	text-decoration: none;
+	color: #f0ad4e !important;
+}
+.social-links-icons {
+	font-size: 15px !important;
+	margin-right: 5px;
+}
+.nav-social-links:hover {
+	opacity: 0.6;
+}
 .navlinks:hover {
 	background-color: #f0ad4e;
 }
@@ -207,22 +226,14 @@ body {
 
   /* ================================ responsive slider =======================================*/
 @media (max-width: 1000px) {
-	.carousel-caption h5{
-		  font-size: 20px;
-		  font-weight: bold;
-		  color: #f0ad4e;
+	.carousel-indicators li {
+		border: none;
 	  }
-	.carousel-caption {
-	  	margin-bottom: 0;
-	  	transition: all 1s ease;
+	  .carousel-indicators {
+	  	margin: 0;
 	  }
-	.carousel-caption span {
-	  	color: #f0ad4e;
-	  }
-	.carousel-caption p {
-	  	font-size: 10px;
-	  	color: #f0ad4e;
-	  	font-weight: bolder;
+	  .carousel-caption {
+	  	display: none;
 	  }
 }
 .carousel-control-next {
