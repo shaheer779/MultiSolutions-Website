@@ -203,38 +203,39 @@ body {
 
 
 .carousel-indicators li {
-	border: 2px solid #f0ad4e;
+	background-color: #f0ad4e !important;
+	height: 4px !important;
+	width: 35px !important;
   }
 /* styling the caption text */
 .carousel-caption h5{
 	  font-size: 40px;
 	  font-weight: bold;
-	  color: #f0ad4e;
+	  color: black;
   }
 .carousel-caption {
   	margin-bottom: 13%;
   	transition: all 1s ease;
-  }
-.carousel-caption span {
-  	color: #f0ad4e;
+  	background-color: rgba(169, 169, 169,0.8);
   }
 .carousel-caption p {
   	font-size: 20px;
-  	color: #f0ad4e;
-  	font-weight: bolder;
+  	color: black;
   }
 
   /* ================================ responsive slider =======================================*/
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
 	.carousel-indicators li {
+		height: 2px !important;
+		width: 20px !important;
 		border: none;
 	  }
 	  .carousel-indicators {
 	  	margin: 0;
 	  }
-	  .carousel-caption {
-	  	display: none;
-	  }
+	  .slider-images {
+	  	height: 300px !important;	
+  	  }
 }
 .carousel-control-next {
 	font-size: 20px;
@@ -542,6 +543,7 @@ section{
 	padding: 0 !important;
 }
 .image-gallery {
+
 }
 .gallery-carousel {
 	width: 100%;
@@ -551,7 +553,7 @@ section{
 .gallery-carousel-image {
 	height: 560px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
 .gallery-carousel-image {
 	height: auto;
 }

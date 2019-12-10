@@ -1,7 +1,5 @@
 //===============================adding the blur effect to the images and zoom to the text===========================
 
-$(document).ready( ()=>{
-
 		//selecting all the images
 		let images = document.querySelectorAll(".slider-images");
 		//selecting the text box which is to be hovered
@@ -37,47 +35,73 @@ $(document).ready( ()=>{
 					}
 				});
 			}
-			window.sr = ScrollReveal();
-sr.reveal('.navbar',{
-  duration:3000,
-  origin:'top' 
-});
-sr.reveal('.container',{
-  duration:2000,
-  origin:'bottom' 
-});
-sr.reveal('.intro-row',{
-  duration:2000,
-  origin:'bottom' 
-});
-sr.reveal('.accordion',{
-  duration:2000,
-  origin:'bottom' 
-});
-sr.reveal('.container-fluid',{
-  duration:2000,
-  origin:'bottom' 
-});
-sr.reveal('.d-flex',{
-  duration:2000,
-  origin:'bottom' 
-});
+				window.sr = ScrollReveal();
+				sr.reveal('.navbar',{
+				  duration:3000,
+				  origin:'top' 
+				});
+				sr.reveal('.container',{
+				  duration:2000,
+				  origin:'bottom' 
+				});
+				sr.reveal('.intro-row',{
+				  duration:2000,
+				  origin:'bottom' 
+				});
+				sr.reveal('.accordion',{
+				  duration:2000,
+				  origin:'bottom' 
+				});
+				sr.reveal('.container-fluid',{
+				  duration:2000,
+				  origin:'bottom' 
+				});
+				sr.reveal('.d-flex',{
+				  duration:2000,
+				  origin:'bottom' 
+				});
+				// responsive nav bar 
+				let nav = document.querySelectorAll(".navbar");
+				let introArea = document.querySelectorAll(".introarea-container");
+				// let table = document.querySelectorAll(".products-table");
+				let socialLinksNav = document.querySelectorAll(".social-links");
+				let detailsContainer = document.querySelectorAll(".details-container"); 
+				let captionHeading = document.querySelectorAll(".caption-heading");
+				let captionText = document.querySelectorAll(".caption-text");
+				let imageGalleryContainer = document.querySelectorAll(".gallery-section-container");
+				let imageGallery = document.querySelectorAll(".image-gallery");
+				let gallerySlider = document.querySelectorAll(".gallery-carousel-image");
+
+				// responsiveness for Andriod/ios 
+				if($(window).width() < 750) {
+					$(nav).removeClass('fixed-top');
+					$(nav).css("background-color", "rgba(0,0,0,0.8)");
+					$(introArea).css("display", "none");
+					$(socialLinksNav).css("display", "none");
+					$(detailsContainer).removeClass('row');
+					$(detailsContainer).css("margin", "0");
+					$(captionHeading).css("display", "none");
+					$(captionText).css("display", "none");
+				}
+				// responsiveness for ipad pro 
+				if($(window).width() < 1400 && $(window).width() >= 700) {
+					$(images).css({
+						height: "500px"
+					});
+					$(imageGalleryContainer).css("height", "400px");
+					$(imageGallery).css("height", "400px");
+					$(gallerySlider).css("height","400px");
+				}
+				// responsiveness for ipad
+				if($(window).width() > 700 && $(window).width() <= 800) {
+					$(introArea).css("display", "none");
+					$(imageGalleryContainer).css("height", "400px");
+					$(imageGallery).css("height", "400px");
+					$(gallerySlider).css("height","400px");
+					$(socialLinksNav).css("display", "none");
+				}
+				
 
 
-});
 
-// responsive nav bar 
-var nav = document.querySelectorAll(".navbar");
-var introArea = document.querySelectorAll(".introarea-container");
-// var table = document.querySelectorAll(".products-table");
-var socialLinksNav = document.querySelectorAll(".social-links");
-var detailsContainer = document.querySelectorAll(".details-container"); 
 
-if($(window).width() < 1000) {
-	$(nav).removeClass('fixed-top');
-	$(nav).css("background-color", "rgba(0,0,0,0.8)");
-	$(introArea).css("display", "none");
-	$(socialLinksNav).css("display", "none");
-	$(detailsContainer).removeClass('row');
-	$(detailsContainer).css("margin", "0");
-}
