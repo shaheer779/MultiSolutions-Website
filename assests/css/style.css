@@ -182,7 +182,7 @@ body {
 	font-size: 3em;
 	position: absolute;
 	top: -80px;
-	left: 35%;
+	left: 37%;
 	background-color: rgb(0,0,0);
 	padding: 2.5% 5% 2.5% 5%;
 	border: 20px solid gray;
@@ -190,9 +190,17 @@ body {
 	color: #f0ad4e;
 	transition: all 0.5s ease-in-out;
 }
+.short-block {
+	min-height: 300px;
+	max-height: auto;
+}
+.long-block {
+	min-height: 500px;
+	max-height: auto;
+}
 .intro-block:hover .intro-icon {
 	background-color: darkorange;
-	border: 20px solid #FFCC00;
+	border: 20px solid darkorange;
 	color: black;
 } 
 .intro-row {
@@ -373,14 +381,14 @@ section{
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: relative;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+  /*  -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;*/
 }
 
 .flip-card-inner-front,
 .flip-card-inner-back {
    -webkit-backface-visibility: hidden;
-   backface-visibility: hidden;
+  /* backface-visibility: hidden;*/
    position: absolute;
    top: 0;
    left: 0;
