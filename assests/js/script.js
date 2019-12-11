@@ -100,6 +100,7 @@
 					$(gallerySlider).css("height","400px");
 					$(socialLinksNav).css("display", "none");
 				}
+
 				
 
 

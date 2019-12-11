@@ -137,11 +137,54 @@ body {
 	height: 1px;
 }
 
+.important-note {
+  background-color: #f0ad4e;
+  width: 100%;
+  min-height: 50px; 
+  max-height: auto;
+}
 .page-footer {
-	background-color: rgb(0,0,0,0.8);
-	margin: 0 !important;
+  background-color: rgb(0,0,0,0.8);
 }
 .footerIcons:hover {
-		cursor: pointer;
-		opacity: 0.5;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.footer-sections {
+  padding-top: 50px;
+  height: 300px;
+}
+.footer-row {
+  width: 30%;
+  margin: 0 auto !important;
+}
+.footer-section-one {
+  
+}
+.footer-section-two {
+  
+}
+.footer-section-three {
+
+}
+.footer-links {
+  text-decoration: none;
+  color: #f0ad4e;
+}
+.footer-links:hover {
+  text-decoration: none;
+  color: #f0ad4e;
+  opacity: 0.8;
+}
+.note-links {
+  color: gray;
+  text-decoration: none;
+}
+.note-links:hover {
+  color: black;
+  text-decoration: underline white;
+}
+.about-links {
+  list-style: none;
+  line-height: 2.5rem;
 }
