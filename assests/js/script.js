@@ -101,6 +101,31 @@
 					$(socialLinksNav).css("display", "none");
 				}
 
+
+				// =================== Scrolling to top button ======================
+				function scrollToTop() {
+				window.scrollTo({top: 0, behavior: 'smooth'});
+				}
+
+				let gototop = document.querySelectorAll(".top-link-container");
+				$(gototop).on("click", scrollToTop);
+
+				// ============================================================
+				let navButton = document.querySelectorAll(".top-link-container");
+
+				$(window).scroll(()=> {
+					const pagetop = $(window).scrollTop();
+
+					if(pagetop >= 500){
+						$(navButton).addClass('button-scroll');
+						$(navButton).removeClass('button-hide');
+					}
+					if(pagetop < 500) {
+						$(navButton).removeClass('button-scroll');
+						$(navButton).addClass('button-hide');
+					}
+				});
+
 				
 
 
