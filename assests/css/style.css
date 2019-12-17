@@ -579,14 +579,15 @@ section{
 	max-height: auto;
 }
 .top-link-container {
-	height: 80px; 
-	width: 80px; 
-	background-color: darkorange; 
-	border-radius: 50%; 
-	position: fixed; 
-	left: 95%;
-	top: 80%;
-}
+		height: 80px; 
+		width: 80px; 
+		background-color: darkorange; 
+		border-radius: 50%; 
+		position: fixed; 
+		left: 95%;
+		top: 80%;
+		}
+
 .button-scroll {
 	display: block;
 }
@@ -613,7 +614,34 @@ section{
 		line-height: 50px; 
 		color: black;
 	}
+	.resposive-footer-section{
+		border-right: none !important;
+		border-bottom: 2px solid #f0ad4e !important;
+	}
 }
+@media (min-width: 710px){
+	.top-link-container {
+		height: 80px ; 
+		width: 80px; 
+		background-color: darkorange; 
+		border-radius: 50%; 
+		position: fixed;
+		top: ; 
+		left: 85%;
+	}
+}
+@media (min-width: 1200px){
+	.top-link-container {
+		height: 80px; 
+		width: 80px; 
+		background-color: darkorange; 
+		border-radius: 50%; 
+		position: fixed; 
+		left: 95%;
+		top: 80%;
+		}
+}
+
 .top-link-container:hover {
 	border: 4px solid darkorange;
 	background-color: black !important;
@@ -637,15 +665,6 @@ section{
 .footer-row {
 	width: 50%;
 	margin: 0 auto !important;
-}
-.footer-section-one {
-	
-}
-.footer-section-two {
-		
-}
-.footer-section-three {
-
 }
 .footer-links {
 	text-decoration: none;

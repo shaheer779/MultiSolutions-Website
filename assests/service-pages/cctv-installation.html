@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Service Detail</title>
-<!-- Custom css file -->
-<link rel="stylesheet" type="text/css" href="S-table.css">
- <!-- jQuery file -->
+  <title>Analog Camera</title>
+  <link rel="icon" type="image/png" href="../logo/logoedit3.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme&display=swap" rel="stylesheet">
+
+  <!-- Custom css file -->
+  <link rel="stylesheet" type="text/css" href="../product-pages/p-table.css">
+  <link rel="stylesheet" type="text/css" href="S-table.css">
+  <!-- jQuery file -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
   <!-- Font Awesome Downloded file -->
@@ -12,7 +19,7 @@
   <!-- Font Awesome file CDN-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-<!-- animate.css file -->
+  <!-- animate.css file -->
   <link rel="stylesheet" type="text/css" href="../../assests/css/animate.css">
 
 
@@ -34,14 +41,40 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="101962344622395"
+  theme_color="#ff7e29"
+  logged_in_greeting="Hi there! Thanks for reaching out, How can we help you?"
+  logged_out_greeting="Hi there! Thanks for reaching out, How can we help you?">
+      </div>
 <div id="mainContainer"> 
   <!-- navigation bar -->
   <!-- ================================================================================ -->
- <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+ <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,0,0,0.9);">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span ><a><img src="../../assests/images/menu1.png" height="40px" width="40px"></a></span>
+    <span ><a><img src="../../assests/images/menu1.png" height="20px" width="20px"></a></span>
   </button>
-  <a class="navbar-brand" href="#"><img src="../../assests/logo/logoedit3.png" height="80px" width="250px" alt=""/></a>
+  <a class="navbar-brand" href="#"><img src="../../assests/logo/logoedit3.png" id="logo-img" alt=""/></a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -58,119 +91,87 @@
         <a class="nav-link" href="../../aboutus.html">About us <span class="sr-only">(current)</span></a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <div class="social-links">
+      <ul>
+        <li> <a href="#" class="nav-social-links"> <i class="fab fa-facebook social-links-icons"></i>facebook</a> </li>
+        <li> <a href="#" class="nav-social-links"><i class="fab fa-twitter social-links-icons"></i> twitter</a> </li>
+        <li> <a href="#" class="nav-social-links"><i class="fab fa-instagram social-links-icons"></i> instagram</a> </li>
+       </ul>
+    </div>
   </div>
 </nav>
 
 <!-- main table======================================= -->
 
-<div class="container-fluid services-table-container">
-  <div class="service-heading-container">
-  <h5 class="card-title services-title text-center">Service Details</h5>
-   <hr class="line-break">
- </div>
-    <table class="table table-dark services-table  table-bordered table-hover">
-      <thead>
-        <tr class="bg-warning" >
-          <th scope="col" class="text-center">#SerialNo</th>
-          <th scope="col" class="text-center">Service Type</th>
-          <th scope="col" class="text-center">Charges</th>
-          <th scope="col" class="text-center">Timing</th>
-          <th scope="col " class="text-center" > Detail</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>CCTV Camera</td>
-          <td>30000</td>
-          <td>1</td>
-          <td class="text-right">
-          <a href="#"> <button class="btn btn-dark btn-outline-warning badge-pill "  style="width:80%;">More Detail</button></a>
-       </td>
-        </tr>
-        <tr>
-          <th >2</th>
-          <td>Solar penal</td>
-          <td>10000</td>
-          <td>1</td>
-          <td class="text-right">
-           <a href="#">  <button class="btn btn-dark btn-outline-warning badge-pill " style="width:80%;">More Detail</button></a>
-       </td>
-        </tr>
-        <tr>
-          <th >3</th>
-          <td>AC</td>
-          <td>30000</td>
-          <td>1</td>
-          <td class="text-right">
-           <a href="#"><button class="btn btn-dark btn-outline-warning badge-pill " style="width:80%;">More Detail</button></a>
-       </td>
-        </tr> <tr>
-          <th scope="row">1</th>
-          <td>CCTV Camera</td>
-          <td>30000</td>
-          <td>1</td>
-          <td class="text-right">
-           <a href="#"><button class="btn btn-dark btn-outline-warning badge-pill " style="width:80%;">More Detail</button></a>
-       </td>
-        </tr>
-        <tr>
-          <th >2</th>
-          <td>Solar penal</td>
-          <td>10000</td>
-          <td>1</td>
-          <td class="text-right">
-           <a href="#"><button class="btn btn-dark btn-outline-warning badge-pill " style="width:80%;">More Detail</button></a>
-       </td>
-        </tr>
-        <tr>
-          <th >3</th>
-          <td>AC</td>
-          <td>30000</td>
-          <td>1</td>
-          <td class="text-right">
-           <a href="#"><button class="btn btn-dark btn-outline-warning badge-pill " style="width:80%;">More Detail</button></a>
-       </td>
-        </tr> <tr>
-          <th scope="row">1</th>
-          <td>CCTV Camera</td>
-          <td>30000</td>
-          <td>1</td>
-          <td class="text-right">
-           <a href="#"><button class="btn btn-dark btn-outline-warning badge-pill " style="width:80%;">More Detail</button></a>
-       </td>
-        </tr>
-        <tr>
-          <th >2</th>
-          <td>Solar penal</td>
-          <td>10000</td>
-          <td>1</td>
-          <td class="text-right">
-           <a href="#"><button class="btn btn-dark btn-outline-warning badge-pill " style="width:80%;">More Detail</button></a>
-       </td>
-        </tr>
-        <tr>
-          <th >3</th>
-          <td>AC</td>
-          <td>30000</td>
-          <td>1</td>
-          <td class="text-right">
-           <a href="#"><button class="btn btn-dark btn-outline-warning badge-pill " style="width:80%;">More Detail</button></a>
-       </td>
-        </tr>
-      </tbody>
-  </table>
-</div>	
+<div class="py-4 " style="background-color: #f7f7f7; min-height: 400px;">
+  <div class="service_container">
+    <h2 class="">Air Conditioner Services</h2>
+    <p>At Multisolutions we offer you best AC services to help solve your professional and home life. From AC installations to AC maintenance and Repairs we offer you the complete and best quality services. </p>
+    <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <img class="collapse_images" src="https://www.affordair.com.au/wp-content/uploads/2019/02/air-conditioning-adelaide-installation.jpg" alt="">
+      <h5 class="mb-0">
+        <button class="btn collapse-button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Air Conditioner Installations
+        </button>
+      </h5>
+    </div>
 
-  <!-- Footer -->
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <img class="collapse_images" src="https://www.lg.com/ae/images/split-air-conditioners/md05601776/gallery/ac_zoom_2.jpg" alt="">
+      <h5 class="mb-0">
+        <button class="btn coll collapsed collapse-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          AC Maintenance services
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <img class="collapse_images"src="http://onenesscontracting.com/images/about.png" alt="">
+      <h5 class="mb-0">
+        <button class="btn collapsed collapse-button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          AC Repair Services
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+ <!-- ======================================================================= -->
+<div class="important-note ">
+  <div class="text-center top-link-container button-hide" title="Go to the Top">
+    <i class="fas fa-angle-double-up top-link" ></i>
+  </div>
+  <div class="text-center"style=" padding-top: 15px;width: 100%; min-height: 50px;">How was your experience on this website? Let us know on <a class="note-links" href="https://web.facebook.com/Multi-Solutions-101962344622395/?ref=bookmarks">Facebook </a> and <a  class="note-links" href="https://web.facebook.com/Multi-Solutions-101962344622395/?ref=bookmarks">Like </a> our page. you can also contact us on <a href="#" class="note-links">Twitter </a></div>
+ </div>
+  <!-- ===================================footer=============================================== -->
+<!-- Footer -->
 <footer class="page-footer font-small darken-3" >
 
   <!-- Footer Elements -->
-  <div class="container-fluid">
+  <div class="container-fluid" style=" height: 100px !important;">
 
     <!-- Grid row-->
     <div class="row">
@@ -213,14 +214,53 @@
   </div>
   <!-- Footer Elements -->
 
+  <!-- ================================ -->
+  <div class="row footer-row">
+    <div class="col-md-4 footer-sections footer-section-one text-center">
+      <h4> <a href="aboutus.html" class="footer-links" style="color: darkorange; font-style: italic; text-decoration: underline white;" >About us</a></h4>
+      <ul>
+        <li class="about-links"><a href="#" class="footer-links">Our Mission</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our History</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our Leadership</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our partners</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 footer-sections footer-section-two">
+       <h4> <a href="aboutus.html" class="footer-links" style="color: darkorange; font-style: italic; text-decoration: underline white;" >About us</a></h4>
+      <ul>
+        <li class="about-links"><a href="#" class="footer-links">Our Mission</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our History</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our Leadership</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our partners</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 footer-sections footer-section-three">
+       <h4> <a href="aboutus.html" class="footer-links" style="color: darkorange; font-style: italic; text-decoration: underline white;" >About us</a></h4>
+      <ul>
+        <li class="about-links"><a href="#" class="footer-links">Our Mission</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our History</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our Leadership</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our partners</a></li>
+      </ul>
+    </div>
+   </div>
+
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style="color: #f0ad4e">© 2019 Copyright: Pachinkoh Innovative Developers
+  <div class="row" style=" background-color:rgba(0,0,0,0.5);">
+  <div style=" color: #f0ad4e" class="footer-copyright py-4 col-sm-6 text-center" >© 2019 Copyright: Multisolutions company
   </div>
+  <div class="col-sm-6" style=" color: #f0ad4e">
+    <p class="text-center py-4">Developed by: Pachinkoh Innovative Developers.</p>
+  </div>
+</div>
   <!-- Copyright -->
 
 </footer>
 
+<!-- Footer -->
+
 <!-- Footer --> 
 
+<script src="../../assests/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
