@@ -240,15 +240,15 @@ body {
     opacity: 0.5;
 }
 .footer-sections {
-  padding-top: 50px;
-  height: 300px;
+	padding-top: 50px !important;
+	height: 300px;
 }
 .footer-row {
-  width: 30%;
-  margin: 0 auto !important;
+	width: 50%;
+	margin: 0 auto !important;
 }
 .footer-section-one {
-  
+  border-right: 2px solid #f0ad4e;
 }
 .footer-section-two {
   
@@ -276,6 +276,10 @@ body {
 .about-links {
   list-style: none;
   line-height: 2.5rem;
+}
+.bottom-note {
+	max-width: 100%;
+	margin: 0 !important;
 }
 
 /*=============== adding the responsiveness ========================*/
@@ -343,6 +347,10 @@ body {
 	}
 	.pdf-link-button button:focus {
 		outline: none;
+	}
+	.footer-row {
+	  width: 0%;
+	  margin: 0 auto !important;
 	}
 }
 @media only screen and (min-width: 1201px){
