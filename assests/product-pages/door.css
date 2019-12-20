@@ -69,15 +69,20 @@ body {
 }
 
 /*=============================== product table styling =================================*/
-.products-table-container {
-	background: url(https://images.unsplash.com/photo-1530476853990-25a9c69b8917?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80); 
-	background-repeat: no-repeat; 
-	background-size: cover;
-	width: 100%;
-	min-height: 1100px;
+.container-fluid{
+	 
+	background-image:url('../images/a1.jpg');
+	height:720px;
+	
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
 	position: relative;
-	padding-top: 120px;
+	background-attachment: fixed;
 }
+
+
 .products-title {
 	color: #f0ad4e;
 	padding-top: 20px;
