@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Automaitc Access</title>
+  <link rel="icon" type="image/png" href="../logo/logoedit3.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme&display=swap" rel="stylesheet">
+
+  <!-- Custom css file -->
+  <link rel="stylesheet" type="text/css" href="../product-pages/p-table.css">
+  <link rel="stylesheet" type="text/css" href="../service-pages/S-table.css">
+  <!-- jQuery file -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- Font Awesome Downloded file -->
+  <link rel="stylesheet" type="text/css" href="../../assests/css/lib/css/all.min.css">
+  <!-- Font Awesome file CDN-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- animate.css file -->
+  <link rel="stylesheet" type="text/css" href="../../assests/css/animate.css">
+
+
+  <!-- bootstrap cdn css file -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- bootstrap downloaded css file -->
+  <link rel="stylesheet" type="text/css" href="../../assests/css/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+  <!-- bootstrap js cdn file-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- bootstrap js downloded file -->
+  <script src="../../assests/css/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+  <!-- ================================================================================================== -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="101962344622395"
+  theme_color="#ff7e29"
+  logged_in_greeting="Hi there! Thanks for reaching out, How can we help you?"
+  logged_out_greeting="Hi there! Thanks for reaching out, How can we help you?">
+      </div>
+<div id="mainContainer"> 
+  <!-- navigation bar -->
+  <!-- ================================================================================ -->
+ <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,0,0,0.9);">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span ><a><img src="../../assests/images/menu1.png" height="20px" width="20px"></a></span>
+  </button>
+  <a class="navbar-brand" href="#"><img src="../../assests/logo/logoedit3.png" id="logo-img" alt=""/></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active navlinks">
+        <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item navlinks">
+        <a class="nav-link" href="../../products.html">Products</a>
+      </li>
+       <li class="nav-item active navlinks">
+        <a class="nav-link" href="../../services.html">Services <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item active navlinks">
+        <a class="nav-link" href="../../aboutus.html">About us <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="social-links">
+      <ul>
+        <li> <a href="#" class="nav-social-links"> <i class="fab fa-facebook social-links-icons"></i>facebook</a> </li>
+        <li> <a href="#" class="nav-social-links"><i class="fab fa-twitter social-links-icons"></i> twitter</a> </li>
+        <li> <a href="#" class="nav-social-links"><i class="fab fa-instagram social-links-icons"></i> instagram</a> </li>
+       </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- main table======================================= -->
+
+<div class="py-4 " style="background-color: #f7f7f7; min-height: 400px;">
+  <div class="service_container">
+    <h2 class="font-weight-bold">Categouries</h2>
+    
+    <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <img class="collapse_images" src="../images/s1.jpg" alt="">
+      <h5 class="mb-0">
+        <button class="btn collapse-button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Sliding Gate 
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       <ul class="pl-3">
+         <li>High-performance, maintenance-free optical fingerprint sensor</li>
+         <li>High speed USB interface</li>
+         <li>Readily accessible for any finger</li>
+         <li>LED indicates the status of the device</li>
+         <li>Removable weighted stand</li>
+         <li>Available SDK for secondary development</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <img class="collapse_images" src="../images/s2.jpg" alt="">
+      <h5 class="mb-0">
+        <button class="btn coll collapsed collapse-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Automatic Shutter
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+       <ul class="pl-3">
+          <li>Built-in siren: can work independently or together with alarm system</li>
+          <li>Ceiling or wall mounting; suitable for any room</li>
+          <li>Test button for easy recommended monthly testing</li>
+          <li>Loud 85DB alarm signal</li>
+          <li>9V battery operated (included)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <img class="collapse_images"src="../images/s3.jpg" alt="">
+      <h5 class="mb-0">
+         <button class="btn collapsed collapse-button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Spin Gate
+         </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <ul class="pl-3">
+          <li>Mini power consumption design</li>
+          <li>2 grade detection sensitivities for option</li>
+          <li>Bi-direction temperature compensation technology</li>
+          <li>-High capacity battery (with 24 months life time)</li>
+          <li>EDS/anti electric shock/anti mobile interference</li>
+          <li>Anti white light</li>
+        </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+ <!-- ======================================================================= -->
+<div class="important-note ">
+  <div class="text-center top-link-container button-hide" title="Go to the Top">
+    <i class="fas fa-angle-double-up top-link" ></i>
+  </div>
+  <div class="text-center"style=" padding-top: 15px;width: 100%; min-height: 50px;">How was your experience on this website? Let us know on <a class="note-links" href="https://web.facebook.com/Multi-Solutions-101962344622395/?ref=bookmarks">Facebook </a> and <a  class="note-links" href="https://web.facebook.com/Multi-Solutions-101962344622395/?ref=bookmarks">Like </a> our page. you can also contact us on <a href="#" class="note-links">Twitter </a></div>
+ </div>
+  <!-- ===================================footer=============================================== -->
+<!-- Footer -->
+<footer class="page-footer font-small darken-3" >
+
+  <!-- Footer Elements -->
+  <div class="container-fluid" style=" height: 100px !important;">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 justify-content-center  text-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic footerIcons">
+            <i class="fab fa-facebook-f fa-lg  mr-md-5 mr-3 fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic footerIcons">
+            <i class="fab fa-twitter fa-lg mr-md-5 mr-3 fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic footerIcons">
+            <i class="fab fa-google-plus-g fa-lg mr-md-5 mr-3 fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic footerIcons">
+            <i class="fab fa-linkedin-in fa-lg mr-md-5 mr-3 fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic footerIcons">
+            <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic footerIcons">
+            <i class="fab fa-pinterest fa-lg  fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- ================================ -->
+  <div class="row footer-row">
+    <div class="col-md-4 footer-sections footer-section-one text-center">
+      <h4> <a href="aboutus.html" class="footer-links" style="color: darkorange; font-style: italic; text-decoration: underline white;" >About us</a></h4>
+      <ul>
+        <li class="about-links"><a href="#" class="footer-links">Our Mission</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our History</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our Leadership</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our partners</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 footer-sections footer-section-two">
+       <h4> <a href="aboutus.html" class="footer-links" style="color: darkorange; font-style: italic; text-decoration: underline white;" >About us</a></h4>
+      <ul>
+        <li class="about-links"><a href="#" class="footer-links">Our Mission</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our History</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our Leadership</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our partners</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 footer-sections footer-section-three">
+       <h4> <a href="aboutus.html" class="footer-links" style="color: darkorange; font-style: italic; text-decoration: underline white;" >About us</a></h4>
+      <ul>
+        <li class="about-links"><a href="#" class="footer-links">Our Mission</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our History</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our Leadership</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our partners</a></li>
+      </ul>
+    </div>
+   </div>
+
+  <!-- Copyright -->
+  <div class="row" style=" background-color:rgba(0,0,0,0.5);">
+  <div style=" color: #f0ad4e" class="footer-copyright py-4 col-sm-6 text-center" >© 2019 Copyright: Multisolutions company
+  </div>
+  <div class="col-sm-6" style=" color: #f0ad4e">
+    <p class="text-center py-4">Developed by: Pachinkoh Innovative Developers.</p>
+  </div>
+</div>
+  <!-- Copyright -->
+
+</footer>
+
+<!-- Footer -->
+
+<!-- Footer --> 
+
+<script src="../../assests/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biometric Machinel</title>
+  <link rel="icon" type="image/png" href="../logo/logoedit3.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme&display=swap" rel="stylesheet">
+
+  <!-- Custom css file -->
+  <link rel="stylesheet" type="text/css" href="../product-pages/p-table.css">
+  <link rel="stylesheet" type="text/css" href="../service-pages/S-table.css">
+  <!-- jQuery file -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- Font Awesome Downloded file -->
+  <link rel="stylesheet" type="text/css" href="../../assests/css/lib/css/all.min.css">
+  <!-- Font Awesome file CDN-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- animate.css file -->
+  <link rel="stylesheet" type="text/css" href="../../assests/css/animate.css">
+
+
+  <!-- bootstrap cdn css file -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- bootstrap downloaded css file -->
+  <link rel="stylesheet" type="text/css" href="../../assests/css/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+  <!-- bootstrap js cdn file-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- bootstrap js downloded file -->
+  <script src="../../assests/css/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+  <!-- ================================================================================================== -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="101962344622395"
+  theme_color="#ff7e29"
+  logged_in_greeting="Hi there! Thanks for reaching out, How can we help you?"
+  logged_out_greeting="Hi there! Thanks for reaching out, How can we help you?">
+      </div>
+<div id="mainContainer"> 
+  <!-- navigation bar -->
+  <!-- ================================================================================ -->
+ <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,0,0,0.9);">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span ><a><img src="../../assests/images/menu1.png" height="20px" width="20px"></a></span>
+  </button>
+  <a class="navbar-brand" href="#"><img src="../../assests/logo/logoedit3.png" id="logo-img" alt=""/></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active navlinks">
+        <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item navlinks">
+        <a class="nav-link" href="../../products.html">Products</a>
+      </li>
+       <li class="nav-item active navlinks">
+        <a class="nav-link" href="../../services.html">Services <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item active navlinks">
+        <a class="nav-link" href="../../aboutus.html">About us <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="social-links">
+      <ul>
+        <li> <a href="#" class="nav-social-links"> <i class="fab fa-facebook social-links-icons"></i>facebook</a> </li>
+        <li> <a href="#" class="nav-social-links"><i class="fab fa-twitter social-links-icons"></i> twitter</a> </li>
+        <li> <a href="#" class="nav-social-links"><i class="fab fa-instagram social-links-icons"></i> instagram</a> </li>
+       </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- main table======================================= -->
+
+<div class="py-4 " style="background-color: #f7f7f7; min-height: 400px;">
+  <div class="service_container">
+    <h2 class="font-weight-bold">Categouries</h2>
+    
+    <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <img class="collapse_images" src="../images/f3.jpg" alt="">
+      <h5 class="mb-0">
+        <button class="btn collapse-button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          FingerPrint System
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       <ul class="pl-3">
+         <li>High-performance, maintenance-free optical fingerprint sensor</li>
+         <li>High speed USB interface</li>
+         <li>Readily accessible for any finger</li>
+         <li>LED indicates the status of the device</li>
+         <li>Removable weighted stand</li>
+         <li>Available SDK for secondary development</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <img class="collapse_images" src="../images/f4.jpg" alt="">
+      <h5 class="mb-0">
+        <button class="btn coll collapsed collapse-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          CardScan System
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+       <ul class="pl-3">
+          <li>Built-in siren: can work independently or together with alarm system</li>
+          <li>Ceiling or wall mounting; suitable for any room</li>
+          <li>Test button for easy recommended monthly testing</li>
+          <li>Loud 85DB alarm signal</li>
+          <li>9V battery operated (included)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <img class="collapse_images"src="../images/f5.jpg" alt="">
+      <h5 class="mb-0">
+         <button class="btn collapsed collapse-button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Eye Recognition System
+         </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <ul class="pl-3">
+          <li>Mini power consumption design</li>
+          <li>2 grade detection sensitivities for option</li>
+          <li>Bi-direction temperature compensation technology</li>
+          <li>-High capacity battery (with 24 months life time)</li>
+          <li>EDS/anti electric shock/anti mobile interference</li>
+          <li>Anti white light</li>
+        </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+ <!-- ======================================================================= -->
+<div class="important-note ">
+  <div class="text-center top-link-container button-hide" title="Go to the Top">
+    <i class="fas fa-angle-double-up top-link" ></i>
+  </div>
+  <div class="text-center"style=" padding-top: 15px;width: 100%; min-height: 50px;">How was your experience on this website? Let us know on <a class="note-links" href="https://web.facebook.com/Multi-Solutions-101962344622395/?ref=bookmarks">Facebook </a> and <a  class="note-links" href="https://web.facebook.com/Multi-Solutions-101962344622395/?ref=bookmarks">Like </a> our page. you can also contact us on <a href="#" class="note-links">Twitter </a></div>
+ </div>
+  <!-- ===================================footer=============================================== -->
+<!-- Footer -->
+<footer class="page-footer font-small darken-3" >
+
+  <!-- Footer Elements -->
+  <div class="container-fluid" style=" height: 100px !important;">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 justify-content-center  text-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic footerIcons">
+            <i class="fab fa-facebook-f fa-lg  mr-md-5 mr-3 fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic footerIcons">
+            <i class="fab fa-twitter fa-lg mr-md-5 mr-3 fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic footerIcons">
+            <i class="fab fa-google-plus-g fa-lg mr-md-5 mr-3 fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic footerIcons">
+            <i class="fab fa-linkedin-in fa-lg mr-md-5 mr-3 fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic footerIcons">
+            <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic footerIcons">
+            <i class="fab fa-pinterest fa-lg  fa-2x" style="color: #f0ad4e"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- ================================ -->
+  <div class="row footer-row">
+    <div class="col-md-4 footer-sections footer-section-one text-center">
+      <h4> <a href="aboutus.html" class="footer-links" style="color: darkorange; font-style: italic; text-decoration: underline white;" >About us</a></h4>
+      <ul>
+        <li class="about-links"><a href="#" class="footer-links">Our Mission</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our History</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our Leadership</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our partners</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 footer-sections footer-section-two">
+       <h4> <a href="aboutus.html" class="footer-links" style="color: darkorange; font-style: italic; text-decoration: underline white;" >About us</a></h4>
+      <ul>
+        <li class="about-links"><a href="#" class="footer-links">Our Mission</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our History</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our Leadership</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our partners</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 footer-sections footer-section-three">
+       <h4> <a href="aboutus.html" class="footer-links" style="color: darkorange; font-style: italic; text-decoration: underline white;" >About us</a></h4>
+      <ul>
+        <li class="about-links"><a href="#" class="footer-links">Our Mission</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our History</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our Leadership</a></li>
+        <li class="about-links"><a href="#" class="footer-links">Our partners</a></li>
+      </ul>
+    </div>
+   </div>
+
+  <!-- Copyright -->
+  <div class="row" style=" background-color:rgba(0,0,0,0.5);">
+  <div style=" color: #f0ad4e" class="footer-copyright py-4 col-sm-6 text-center" >© 2019 Copyright: Multisolutions company
+  </div>
+  <div class="col-sm-6" style=" color: #f0ad4e">
+    <p class="text-center py-4">Developed by: Pachinkoh Innovative Developers.</p>
+  </div>
+</div>
+  <!-- Copyright -->
+
+</footer>
+
+<!-- Footer -->
+
+<!-- Footer --> 
+
+<script src="../../assests/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
