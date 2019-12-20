@@ -156,6 +156,22 @@ body {
 	-o-transition: all 1s ease;
 	transition: all 1s ease;
 }
+.service-headings {
+	color: darkorange;
+	font-weight: bolder;
+}
+.serviceLinks {
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	color: black;
+	background-color: darkorange;
+	transition: all 0.3s linear;
+}
+.serviceLinks:hover {
+	background-color: rgba(0,0,0,0.8);
+	color: #f0ad4e;
+}
 
 /*Adding the hover effect to the line*/
 .sub-heading:hover:before {
@@ -262,9 +278,15 @@ body {
 		line-height: 50px; 
 		color: black;
 	}
-	.resposive-footer-section{
+	.footer-row {
+	  width: 80%;
+	  margin: 0 auto !important;
+	}
+	.resposive-footer-section {
 		border-right: none !important;
-		border-bottom: 2px solid #f0ad4e !important;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		box-shadow: 3px 3px 3px 0px darkorange;
 	}
 }
 @media (min-width: 710px){
@@ -298,29 +320,14 @@ body {
 	font-size: 35px !important;
 	color: darkorange !important;
 }
-.page-footer {
-  background-color: rgb(0,0,0,0.8);
-}
-.footerIcons:hover {
-    cursor: pointer;
-    opacity: 0.5;
-}
+/*====================================footer styling ======================================*/
 .footer-sections {
-  padding-top: 50px;
-  height: 300px;
+	padding-top: 50px !important;
+	height: 300px;
 }
 .footer-row {
-  width: 30%;
-  margin: 0 auto !important;
-}
-.footer-section-one {
-  
-}
-.footer-section-two {
-  
-}
-.footer-section-three {
-
+	width: 50%;
+	margin: 0 auto !important;
 }
 .footer-links {
   text-decoration: none;
@@ -330,6 +337,20 @@ body {
   text-decoration: none;
   color: #f0ad4e;
   opacity: 0.8;
+}
+.resposive-footer-section {
+		border-right: none !important;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		box-shadow: 3px 3px 3px 0px darkorange;
+	}
+
+.page-footer {
+  background-color: rgb(0,0,0,0.8);
+}
+.footerIcons:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }
 .note-links {
   color: gray;

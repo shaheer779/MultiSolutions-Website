@@ -614,9 +614,15 @@ section{
 		line-height: 50px; 
 		color: black;
 	}
-	.resposive-footer-section{
+	.footer-row {
+	  width: 80%;
+	  margin: 0 auto !important;
+	}
+	.resposive-footer-section {
 		border-right: none !important;
-		border-bottom: 2px solid #f0ad4e !important;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		box-shadow: 3px 3px 3px 0px darkorange;
 	}
 }
 @media (min-width: 710px){
@@ -667,14 +673,20 @@ section{
 	margin: 0 auto !important;
 }
 .footer-links {
-	text-decoration: none;
-	color: #f0ad4e;
+  text-decoration: none;
+  color: #f0ad4e;
 }
 .footer-links:hover {
-	text-decoration: none;
-	color: #f0ad4e;
-	opacity: 0.8;
+  text-decoration: none;
+  color: #f0ad4e;
+  opacity: 0.8;
 }
+.resposive-footer-section {
+		border-right: none !important;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		box-shadow: 3px 3px 3px 0px darkorange;
+	}
 .note-links {
 	color: gray;
 	text-decoration: none;
