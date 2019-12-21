@@ -58,7 +58,6 @@
 	height: 150px;
 	max-width: 100%;
 	margin: 0 !important;
-	z-index: 9999;
 	padding: 20px;
 }
 .important-note-electronic .section-one {
@@ -95,10 +94,21 @@
 }
 .lower-content {
 }
+
+/*========================================== event page styling =================================*/
+.img-fluid {
+	transition: all 0.4s;
+}
+.img-fluid:hover {
+	backface-visibility: hidden !important;
+	transform: translateZ(0) scale(1.13);
+	z-index: 10 !important;
+}
+
 /*========================================== footer styling =====================================*/
 .footer-sections {
 	padding-top: 50px !important;
-	height: 300px;
+	
 }
 .footer-row {
 	width: 50%;
